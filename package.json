@@ -1,6 +1,10 @@
 {
   "name": "esthetic-room-app",
   "version": "0.0.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/evgeniy-bokshits/esthetic-room-app.git"
+  },
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -43,5 +47,5 @@
     "ts-node": "~8.3.0",
     "tslint": "~5.18.0",
     "typescript": "~3.7.5"
-  }
+  },
 }
