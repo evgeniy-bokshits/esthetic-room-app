@@ -1,7 +1,14 @@
 {
   "compileOnSave": false,
   "compilerOptions": {
-    "baseUrl": "./",
+    "baseUrl": "src",
+    "paths": {
+      "@env": ["environments/environment"],
+      "@shared/*": ["app/shared/*"],
+      "@core/*": ["app/core/*"],
+      "@infrastructure/*": ["app/infrastructure/*"],
+      "@views/*": ["app/views/*"],
+    },
     "outDir": "./dist/out-tsc",
     "sourceMap": true,
     "declaration": false,
@@ -19,6 +26,13 @@
       "dom"
     ]
   },
+  "include": [
+      "src/app/**/*.ts",
+      "src/app/**/*.tsx"
+  ],
+  "exclude": [
+      "node_modules"
+  ],
   "angularCompilerOptions": {
     "fullTemplateTypeCheck": true,
     "strictInjectionParameters": true
