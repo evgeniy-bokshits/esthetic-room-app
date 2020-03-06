@@ -1,0 +1,37 @@
+$expanded-width: 256px;
+$collapsed-width: 64px;
+
+.app-toolbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  background-color: #1976d2;
+  color: white;
+  font-weight: 600;
+}
+
+.height-full {
+  height: 100%;
+}
+
+mat-sidenav {
+  background-color: #283238;
+  box-shadow: 1px 0 5px 0 rgba(0, 0, 0, 0.2), 2px 0 4px 0 rgba(0, 0, 0, 0.14),
+    3px 0 4px 0 rgba(0, 0, 0, 0.12);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  transition: width 0.25s ease-in;
+  overflow: hidden;
+
+  max-width: $expanded-width;
+  width: $expanded-width;
+
+  &.collapsed {
+    width: $collapsed-width;
+  }
+}

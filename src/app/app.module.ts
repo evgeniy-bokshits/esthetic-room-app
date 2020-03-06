@@ -1,23 +1,23 @@
-import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from '@core/app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { Router } from '@angular/router';
-import { ViewlayoutmainComponent } from './viewlayoutmain/viewlayoutmain.component';
-import { MainLayoutComponent } from './view/layout/main-layout/main-layout.component';
+import { ViewsModule } from '@views/views.module';
+import { MaterialModule } from '@shared/material.module';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ViewlayoutmainComponent,
-    MainLayoutComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+    ViewsModule,
+    MaterialModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,6 +1,8 @@
 import { NgModule } from '@angular/core';
+import { MainLayoutComponent } from './layout/main/main-layout.component';
+import { SharedModule } from '@shared/shared.module';
 import { MaterialModule } from '@shared/material.module';
-import { SidenavMenuComponent } from './components/sidenav-menu/sidenav-menu.component';
+import { CommonModule } from '@angular/common';
 
 /*In short, when using a Shared Module:
 DO declare components, pipes, directives, and export them.
@@ -11,14 +13,16 @@ DO NOT import the SharedModule into the AppModule. */
 
 @NgModule({
   declarations: [
-    SidenavMenuComponent
+    MainLayoutComponent,
   ],
   imports: [
     MaterialModule,
+    SharedModule,
+    CommonModule
   ],
   entryComponents: [],
   exports: [
-    SidenavMenuComponent
+    MainLayoutComponent
   ],
 })
-export class SharedModule { }
+export class ViewsModule { }

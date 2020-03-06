@@ -1,1 +1,12 @@
-<p>main-layout works!</p>
+
+  <mat-sidenav-container class="height-full">
+    <mat-sidenav mode="side" [opened]="true" class="collapsed">
+      <app-sidenav-menu></app-sidenav-menu>
+    </mat-sidenav>
+    <mat-sidenav-content>
+      <mat-toolbar color="primary" class="app-toolbar">
+        <h1 class="app-title-name">Esthetic Room</h1>
+        <span class="toolbar-spacer"></span>
+      </mat-toolbar>
+    </mat-sidenav-content>
+  </mat-sidenav-container>
